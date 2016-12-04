@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Autokauppa</title>
+  <meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+	body {
+font-family: 'Marcellus SC', serif;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: url("../kuvat/dbs.jpg");
+		background-repeat: repeat;
+		background-size: cover;
+	}
+
+	.navbar {
+		margin-bottom: 20px;
+		-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+	}
+@font-face {
+    font-family: "Timeless";
+    src: url("../fonts/Timeless.ttf");
+}
+.well {
+			-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+	}
+.item {
+			-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+	}
+.thumbnail {
+opacity: 0,5;
+background-color: #EEEEEE;
+}
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Autokauppa</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Etusivu <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Tietoja</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Merkit <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Audi</a></li>
+            <li><a href="#">Mercedez-Benz</a></li>
+            <li><a href="#">Volvo</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">BMW</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Aston Martin</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Ota Yhteyttä</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+	<div class="col-md-3">
+		<div class="well">
+		<div class="form-inline" role="form">
+	        <div class="form-group">
+				<p>Merkki</p>
+				<input type="text" class="form-control" placeholder="Aston Martin">
+					<hr class="separator">
+				<p>Malli</p>
+					<input type="text" class="form-control" placeholder="DBS">
+				</div>
+					<hr class="separator">
+				<p>Korimalli</p>
+				<input type="text" class="form-control" placeholder="Kottero">
+					<hr class="separator">
+				<p>Polttoaine</p>
+				<input type="text" class="form-control" placeholder="Kiisseli">
+					<hr class="separator">
+				<p>Vuosimalli</p>
+				<input type="text" class="form-control" placeholder="404" size="2"> -
+				<input type="text" class="form-control" placeholder="404" size="2">
+					<hr class="separator">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+  <div class="col-md-9">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../kuvat/1.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="../kuvat/2.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="../kuvat/3.jpg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="../kuvat/4.jpg" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="col-md-9">
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>2011 | Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>2011 | Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+					<h5>VM.2011</h5>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>2011 | Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>2011 | Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<h4>Aston Martin DBS (5.0)</h4>
+			<img src="/kuvat/autokuva.jpg" class="img-rounded" width="300" height="200">
+		<div class="caption">
+        <p>50200km</p><p>2011 | Automaatti | Diesel</p>
+        <p><a href="#" class="btn btn-primary" role="button">Lisätietoja</a> 
+		<a href="#" class="btn btn-default" role="button">Ota Yhteyttä</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <hr class="separator">
+  <div class="row-fluid">
+	<p>Yhteystiedot</p>
+	<p>Samuel Hakala & Jere Peltola</p>
+	<p>0405207795 & 0401231234</p>
+	</div>
+</div><!-- /.container -->
+
+
+    <script src="../bootstrap/js/jquery.js"></script>
+	<script src="../bootstrap/js/bootstrap.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
